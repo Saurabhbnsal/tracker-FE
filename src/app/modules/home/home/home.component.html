@@ -1,0 +1,9 @@
+<div class="button-container">
+    <div class="buttons">
+
+        <button mat-button class="gradient-{{i+1}}" *ngFor="let button of homeButtons; index as i">
+            <mat-icon>{{button.icon}}</mat-icon>
+            {{button.text}}
+        </button>
+    </div>
+</div>

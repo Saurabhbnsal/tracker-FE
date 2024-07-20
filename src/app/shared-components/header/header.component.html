@@ -1,0 +1,20 @@
+<div class="header-container">
+    <div class="navbar">
+        <div class="menu-button" (click)="toggleMenu()">☰</div>
+        <div class="header-text"> Tracker </div>
+    </div>
+</div>
+
+<div class="header-menu" [class.open]="isMenuOpen">
+    <div class="close-button">
+        <mat-icon (click)="toggleMenu()">close</mat-icon>
+    </div>
+    <nav class="menu-items">
+        <a href="#">Notes</a>
+        <a href="#">Games</a>
+        <a href="#">Movies & Shows</a>
+        <a href="#">Books</a>
+        <a href="#">Expense Manager</a>
+        <a href="#">Splitwise</a>
+    </nav>
+</div>
